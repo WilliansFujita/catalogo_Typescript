@@ -114,4 +114,12 @@ describe("Category Unit tests", () => {
         category.activate();
         expect(category.is_active).toBeTruthy();
     });
+    test('should update a category', () => {
+        const category = new category_1.Category({ name: 'movie', description: 'the best movie ever..' });
+        expect(category.name).toBe('movie');
+        expect(category.description).toBe('the best movie ever..');
+        category.update({ name: 'new movie', description: 'a good movie' });
+        expect(category.name).toBe('new movie');
+        expect(category.description).toBe('a good movie');
+    });
 });

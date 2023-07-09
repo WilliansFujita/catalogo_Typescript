@@ -38,5 +38,10 @@ class Category extends entity_1.default {
     activate() {
         this.props.is_active = true;
     }
+    update(props) {
+        var _a, _b;
+        this.props.name = (_a = props.name) !== null && _a !== void 0 ? _a : this.props.name;
+        this.props.description = (_b = props.description) !== null && _b !== void 0 ? _b : this.props.description;
+    }
 }
 exports.Category = Category;
