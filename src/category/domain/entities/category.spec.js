@@ -108,4 +108,10 @@ describe("Category Unit tests", () => {
         category.deactivate();
         expect(category.is_active).toBeFalsy();
     });
+    test('should activate a deactiveted category', () => {
+        const category = new category_1.Category({ name: 'movie', is_active: false });
+        expect(category.is_active).toBeFalsy();
+        category.activate();
+        expect(category.is_active).toBeTruthy();
+    });
 });

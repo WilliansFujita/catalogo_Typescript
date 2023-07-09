@@ -10,6 +10,7 @@ export type CategoryProperties = {
 
 export class Category extends Entity<CategoryProperties> {
     
+    
     public readonly uniqueEntityId:UniqueEntityId;
     constructor(
         public readonly props: CategoryProperties, id?: UniqueEntityId
@@ -48,6 +49,10 @@ export class Category extends Entity<CategoryProperties> {
 
     deactivate() {
         this.props.is_active = false;
+    }
+
+    activate() {
+        this.props.is_active = true;
     }
 }
 

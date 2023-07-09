@@ -35,5 +35,8 @@ class Category extends entity_1.default {
     deactivate() {
         this.props.is_active = false;
     }
+    activate() {
+        this.props.is_active = true;
+    }
 }
 exports.Category = Category;
