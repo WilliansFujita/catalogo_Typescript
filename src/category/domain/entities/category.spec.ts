@@ -1,6 +1,5 @@
-import { Category, CategoryProperties } from "./category";
-import { omit, uniqueId } from 'lodash';
-import {validate as uuidValidate} from 'uuid';
+import { Category } from "./category";
+import { omit } from 'lodash';
 describe("Category Unit tests", () => {
 
     test("constructor of category", () => {
@@ -120,5 +119,12 @@ describe("Category Unit tests", () => {
     test("if field is uuid",()=>{
         const category = new Category({name:'movie'})
         expect(category.uniqueEntityId).not.toBeNull()
+    })
+
+    test('should deactivate a active category', () =>{
+        const category = new Category({name:'movie'})
+        expect(category.is_active).toBeTruthy();
+        category.deactivate();
+        expect(category.is_active).toBeFalsy();
     })
 });

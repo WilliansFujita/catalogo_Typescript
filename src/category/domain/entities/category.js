@@ -4,7 +4,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Category = void 0;
-const entity_1 = __importDefault(require("@seedwork/domain/entity/entity"));
+const entity_1 = __importDefault(require("../../../@seedwork/domain/entity/entity"));
 class Category extends entity_1.default {
     constructor(props, id) {
         var _a, _b;
@@ -31,6 +31,9 @@ class Category extends entity_1.default {
     }
     get create_at() {
         return this.props.created_at;
+    }
+    deactivate() {
+        this.props.is_active = false;
     }
 }
 exports.Category = Category;
