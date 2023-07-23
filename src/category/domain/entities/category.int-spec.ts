@@ -1,4 +1,4 @@
-import ValidationError from "../../../@seedwork/domain/erros/validation-error"
+import {ValidationError} from "../../../@seedwork/domain/erros/validation-error"
 import { Category } from "./category"
 
 describe('Category Integration Tests', () => {

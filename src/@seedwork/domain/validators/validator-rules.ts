@@ -1,4 +1,4 @@
-import ValidationError from "../erros/validation-error"
+import {ValidationError} from "../erros/validation-error"
 
 export default class ValidatorRules {
 
