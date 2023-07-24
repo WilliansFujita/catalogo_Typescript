@@ -11,16 +11,16 @@ describe('CategoryValidator Tests', () => {
         //@ts-ignore
         expect({ validator, data: null }).containsErrorMessages({
             name: [
-                "name should not be empty",
                 "name must be a string",
+                "name should not be empty",
                 "name must be shorter than or equal to 255 characters",
             ],
         });
         //@ts-ignore
         expect({ validator, data: { name: null } }).containsErrorMessages({
             name: [
-                "name should not be empty",
                 "name must be a string",
+                "name should not be empty",
                 "name must be shorter than or equal to 255 characters",
             ],
         });
