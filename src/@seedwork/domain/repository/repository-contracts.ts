@@ -148,5 +148,7 @@ export interface SearchbleRepositoryInterface<
     SearchInput = SearchParams,
     SearchOutPut = SearchResult<E,Filter>>
     extends RepositoryInterface<E> {
+
     search(props: SearchInput): Promise<SearchOutPut>;
+
 }
