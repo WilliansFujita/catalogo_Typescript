@@ -108,12 +108,12 @@ describe("Category Unit tests", () => {
         let category = new Category({
             name: "Movie",
           });
-          expect(category.create_at).toBeInstanceOf(Date);
+          expect(category.created_at).toBeInstanceOf(Date);
 
         let created_at = new Date()  
         category = new Category({name:'Movie', created_at})
 
-        expect(category.create_at).toBe(created_at)
+        expect(category.created_at).toBe(created_at)
     })  
 
     test("if field is uuid",()=>{

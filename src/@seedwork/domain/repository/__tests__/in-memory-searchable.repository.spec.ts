@@ -211,7 +211,7 @@ describe("InMemorySearchableRepository unit Tests", () => {
 
             const arrange = [{
 
-                params: new SearchParams({
+                params: new SearchParams<string>({
                     page: 1,
                     per_page: 2,
                     sort: 'name'
@@ -227,7 +227,7 @@ describe("InMemorySearchableRepository unit Tests", () => {
             },
             {
 
-                params: new SearchParams({
+                params: new SearchParams<string>({
                     page: 2,
                     per_page: 2,
                     sort: 'name'
@@ -243,7 +243,7 @@ describe("InMemorySearchableRepository unit Tests", () => {
             },
             {
 
-                params: new SearchParams({
+                params: new SearchParams<string>({
                     page: 1,
                     per_page: 2,
                     sort: 'name',
@@ -260,7 +260,7 @@ describe("InMemorySearchableRepository unit Tests", () => {
             },
             {
 
-                params: new SearchParams({
+                params: new SearchParams<string>({
                     page: 2,
                     per_page: 2,
                     sort: 'name',

@@ -67,7 +67,7 @@ export class Category extends Entity<CategoryProperties> {
         return this.props.is_active
     }
 
-    get create_at(): Date | undefined{
+    get created_at(): Date | undefined{
         return this.props.created_at
     }
 
