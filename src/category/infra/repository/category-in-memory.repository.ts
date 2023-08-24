@@ -31,7 +31,7 @@ export default class CategoryInMemoryRepository
                 page: props.page,
                 per_page: props.per_page,
                 sort: 'created_at',
-                sort_dir: props.sort_dir
+                sort_dir: props.sort_dir?props.sort_dir:'desc'
             })
             return super.search(new_props)
         }

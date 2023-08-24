@@ -19,3 +19,4 @@ export type Input = {
 }
 
 export type Output = CategoryOutput
+
