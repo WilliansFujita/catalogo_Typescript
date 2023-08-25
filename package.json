@@ -5,8 +5,10 @@
   "scripts": {
     "ts-node": "ts-node",
     "tsc": "tsc",
+    "tsc:check":"npm run tsc -- --noEmit",
     "pretest": "npm run tsc",
-    "test": "jest"
+    "test": "jest",
+    "test:cov": "jest --coverage"
   },
   "keywords": [],
   "author": "",

@@ -37,7 +37,6 @@ describe('Category in memory Unit tests',()=>{
         const items_found = await repository.search(new SearchParams())
         expect(items_found.total).toBe(4)
         expect(items_found.sort).toBe('created_at')
-        console.log(items_found.items)
         
     })
 })
