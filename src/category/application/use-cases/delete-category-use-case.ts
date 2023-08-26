@@ -1,6 +1,5 @@
-import CategoryRepository from "../../domain/repository/category.repository";
-import { CategoryOutput, CategoryOutputMapper } from "../dto/category-output.dto";
-import UseCase from "../../../@seedwork/application/use-case";
+import CategoryRepository from "#category/domain/repository/category.repository";
+import UseCase from "#seedwork/application/use-case";
 
 export default class DeleteCategoryuseCase implements UseCase<Input,Output> {
 

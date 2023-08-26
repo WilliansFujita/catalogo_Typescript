@@ -2,6 +2,9 @@
   "name": "typescript",
   "version": "1.0.0",
   "main": "index.js",
+  "imports":{
+    "#seedwork/*":"./dir/@seedwork/*.js"
+  },
   "scripts": {
     "ts-node": "ts-node",
     "tsc": "tsc",
