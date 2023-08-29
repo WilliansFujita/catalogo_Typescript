@@ -5,7 +5,7 @@ import { SearchInputDto } from "../../../@seedwork/application/dto/search-input"
 import { PaginationOutPutDto, PaginationOutputMapper } from "../../../@seedwork/application/dto/pagination-output";
 
 
-export namespace ListCategoryuseCase{
+export namespace ListCategoriesUseCase{
     export class UseCase implements DefaultUseCase<Input, Output> {
 
         constructor(private categoryRepo: CategoryRepository.Repository) {

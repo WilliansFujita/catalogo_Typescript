@@ -1,15 +1,15 @@
 import { Category } from "../../../domain/entities/category";
 import NotFoundError from "#seedwork/domain/erros/not-found.error";
 import CategoryInMemoryRepository from "../../../infra/repository/category-in-memory.repository";
-import DeleteCategoryuseCase from "../delete-category-use-case"
+import {DeleteCategoryuseCase} from "../delete-category-use-case"
 
 describe('DeleteCategoryUseCase Unit Tests', () => {
-    let useCase: DeleteCategoryuseCase;
+    let useCase: DeleteCategoryuseCase.UseCase;
     let repository: CategoryInMemoryRepository
 
     beforeEach(() => {
         repository = new CategoryInMemoryRepository();
-        useCase = new DeleteCategoryuseCase(repository)
+        useCase = new DeleteCategoryuseCase.UseCase(repository)
     })
 
 

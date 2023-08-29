@@ -1,16 +1,16 @@
 
 import CategoryInMemoryRepository from "../../../infra/repository/category-in-memory.repository";
-import ListCategoriesUseCase from "../list-categories.use-case"
+import {ListCategoriesUseCase} from "../list-categories.use-case"
 import CategoryRepository from "../../../domain/repository/category.repository";
 import { Category } from "../../../domain/entities/category";
 
 describe('GetCategoryUseCase Unit Tests', () => {
-    let useCase: ListCategoriesUseCase;
+    let useCase: ListCategoriesUseCase.UseCase;
     let repository: CategoryInMemoryRepository
 
     beforeEach(() => {
         repository = new CategoryInMemoryRepository();
-        useCase = new ListCategoriesUseCase(repository)
+        useCase = new ListCategoriesUseCase.UseCase(repository)
     })
 
     test('toOutput method', () => {
