@@ -1,3 +1,4 @@
 node_modules/
 dir/
 __coverage/
+src/@core/
