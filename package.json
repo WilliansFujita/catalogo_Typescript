@@ -8,7 +8,8 @@
     "src/nestjs"
   ],
   "scripts": {
-    "test": "npm run test -w @fc/micro-videos"
+    "test": "npm run test -w @fc/micro-videos",
+    "tsc:check":"npm run tsc:check -w @fc/micro-videos"
   },
   "keywords": [],
   "author": "",
